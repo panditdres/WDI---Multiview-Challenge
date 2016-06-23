@@ -1,6 +1,7 @@
 body {
-	background-image: url(http://ianlunn.co.uk/wp-content/uploads/2010/11/bg-sky-300x201.png);
-	background-repeat: repeat;	
+/*	background-image: url(http://ianlunn.co.uk/wp-content/uploads/2010/11/bg-sky-300x201.png);
+	background-repeat: repeat;	*/
+	background-color: #DDDDDD !important;
 }
 .plane {
 	height: 500px;
@@ -22,7 +23,6 @@ h1 {
 	height: 600px;
 	overflow: hidden;
 }
-
 .imagecontainer .vertigo {
 	width: 100%;
 }
@@ -35,7 +35,13 @@ a:hover {
 	text-align: center;
 	text-decoration: underline;
 }
-.video {
-	height:300px;
-	width: 400px;
+.media-body iframe {
+	height: 400px;
+	width: 100%
+}
+iframe:focus {
+	outline: none;
+}
+iframe[seamless] {
+	display: block;
 }
